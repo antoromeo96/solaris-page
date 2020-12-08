@@ -1,0 +1,625 @@
+ul /* or "*" */{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron{
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar*/
+.navbar{
+    background-color: darkcyan;
+    color:white;
+    height: 90px;   
+}
+
+.navbar-logo{
+    color: white;
+    font-family: 'Tahoma';
+    width: 30px;
+}
+.navbar-collapse ul li{  
+    margin: 5px;
+    padding: 5px;
+}
+
+.navbar-collapse ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.active, .navbar-collapse ul li:hover{
+    background-color: darkorange;
+    border-radius: 0;
+}
+.navbar-collapse ul li:focus{
+    border-radius:0;
+}
+.active, .navbar-collapse ul li a:hover{
+    color: white;
+}
+
+.navbar-collapse ul li .sub-menu-1{
+    display:none;
+}
+.navbar-collapse ul li:hover .sub-menu-1{
+    text-align: left;
+    display: block;
+    position: absolute;
+    background-color: darkorange;
+    margin-top: 12px;
+    margin-left: -5px;
+}
+
+.navbar-collapse ul li:hover .sub-menu-1 ul{
+    display: inline-block;
+    margin: 10px;
+}
+.navbar-collapse ul li:hover .sub-menu-1 ul li{
+    width: 160px;
+    padding: 3px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+.navbar-collapse ul li:hover .sub-menu-1 ul li a{
+    font-size: 12px;
+}
+
+.navbar-collapse ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+
+/* nav .navbar-collapse ul button{
+    
+}*/
+
+/* nav .navbar-collapse ul li{
+    color: white;
+    overflow: auto;
+    text-align: center;
+     position: relative;
+    
+}
+
+nav .navbar-collapse ul li:hover{
+    text-align: center;
+    position: relative;
+    color: white;
+    border: 2px solid white;
+}
+*/
+.navbar-collapse ul .button1{
+   border: 2px solid white;
+}
+.navbar-collapse ul .button1:hover{
+    background-color: white;
+}
+
+.navbar-collapse ul .button1 a{
+     
+    position: relative;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    
+    
+    
+    text-decoration: none;
+     
+    font-size: 12px;
+    padding: 6px;
+}
+
+.navbar-collapse ul .button1 a:hover{
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+/* -------- */
+
+
+/* -- MODAL FORM -- */
+
+/* Full-width input fields */
+nav input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btnlog {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50;
+}
+
+.btnlog:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* The Modal (background) */
+nav .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+nav .modal .container{
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+/* Modal Content/Box */
+nav .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+nav .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+nav .close:hover,
+nav .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+nav .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* -- end form modal -- */
+
+/* ---- end Navbar ----*/
+
+
+
+/*-- 1st carousel -- */
+#carouselExampleControls .carousel-inner img{
+    height: 600px;
+    margin-top: 85px;
+}
+
+/* 1st carousel caption */
+.carousel #form{
+    margin-bottom: 85px;
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+}
+
+.carousel .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    vertical-align: middle;
+    transform: translate(-50%, -75%);
+    display: block;
+}
+
+.carousel-caption .form-group input{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 250px;
+    height: 41px;
+    border: white 2px solid; 
+    border-radius: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.carousel-caption .form-group ::placeholder{
+    font-size: 11px;
+    line-height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;  
+}
+.carousel-caption form button{
+    margin: 15px;
+    border-radius: 0;
+   
+}
+.carousel-caption .destination button{
+    height: 40px;
+    width: 250px;
+    border: white 2px solid;
+    color: white;
+    font-size: 11px;
+    color: white bold;
+    background-color: transparent;
+    text-align: center;
+}
+.carousel-caption form .destination button:focus{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: white 2px solid;
+    -webkit-transition-duration: none; /* Safari */
+    transition-duration: none;
+}
+
+.carousel .destination .dropdown-menu{
+    width: 250px;
+    border-radius: 0;
+    font-size: 13px;
+    cursor: pointer;
+    padding-top:0;
+    padding-bottom: 0;
+}
+.carousel .destination .dropdown-menu a:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    color: white;
+}
+.carousel-caption form .form-group button{
+    width: 120px;
+    height: 40px;
+    margin: 2px;
+    position: relative;
+    border: white 2px solid;
+    background-color: transparent;
+    font-size: 10px;
+    text-align: left;
+    color:white;
+}
+
+.carousel-caption form button[type=submit]{
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 0; 
+}
+
+.carousel-caption form button[type=submit]:hover{
+    background-color: blue;
+    color: white;    
+}
+
+
+
+
+/* -- end 1st carousel -- */
+
+/* -- section1 --*/
+.icon { 
+    margin-bottom: 20px;
+    background-color: cyan;
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 40px;
+    padding: 20px;
+    color: white;  
+}
+
+/* -- section 2 --*/
+.section2 .today{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+/* -- section3 -- */
+.section3 .carousel-inner img{
+    width: 100%;
+    height: 500px;
+}
+.section3 .carousel-caption{
+    text-align: justify;
+    left: 60px;
+    top: 60px;
+}
+.section3 .carousel-caption h1{
+    font-size: 80px;
+    margin-bottom: 15px;
+    color: darkorange;
+}
+.section3 .carousel-caption h6{
+    color: black;
+    margin-bottom:30px;
+}
+.section3 .carousel-caption .content{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 15px;  
+}
+.section3 .carousel-caption i{
+    margin-right: 10px;
+    font-size: 35px;
+    padding-top: 3px;
+}
+.section3 .carousel-caption p{
+    color: red;
+    font-size: 15px;
+}
+/*.section3 .carousel-caption .row .col-1{
+    background-color: green;
+    text-align: center;
+    
+    
+}
+.section3 .carousel-caption .row .col-1 i{
+    font-size: 30px;
+}
+.section3 .carousel-caption .row .col-3{
+    margin-left:0;
+    background-color: green;
+    
+}
+.section3 .carousel-caption .row .col-3 p{
+    color: red;
+    line-height: 6px;
+    vertical-align: middle;
+}
+*/
+
+
+.section3 .btncarousel{
+    background-color: darkorange;
+    color: white;
+    width: 120px;
+    height: 60px;
+    font-size: 15px;
+    padding: 17px;
+    border-radius: 0px;
+}
+.section3 .btncarousel:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: darkorange;
+    font-weight: 2px;
+    border: 2px solid white;
+}
+
+
+/* -- section4 -- */
+.section4 .today{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* -- section 5 --*/
+.section5 a{
+    text-decoration: none;
+}
+.section5 a h4{
+    color:black;
+}
+.section .col-md-4 a h4:hover{
+    color: black;
+}
+.section5 .col-md-4 a p{
+    color: grey;
+}
+.section5 .col-md-4 a p:hover{
+    color: darkorange;
+}
+.section5 .col-md-4 img{
+    height: 200px;
+}
+
+
+
+
+/* -- cities section -- */
+.cities .row .col-2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cities .row .col-2 a{
+    padding-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: darkcyan;
+}
+.cities .row .col-2 a:hover{
+    color: black;
+}
+.cities .col-2 img{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.cities .join-content .col-12{
+    padding-top: 40px;
+}
+.cities .btncarousel1{
+    background-color: darkorange;
+    color: white;
+    width: 120px;
+    height: 60px;
+    font-size: 15px;
+    padding: 17px;
+    border-radius: 0;
+}
+
+.cities .btncarousel1:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: darkorange;
+    border: 2px solid darkorange;
+}
+
+/* -- footer -- */
+.footer .jumbotron{
+    background-color: black;
+}
+.footer .col-4 .row{
+    padding-top: 30px;
+}
+
+
+    /* third column*/
+.footer .first-column, .second-column, third-column h5{
+    color: white;
+}
+.footer .first-column .col-9,.second-column .col-9, .third-column .col-9{
+    font-size: 13px;
+}
+.footer .first-column .col-9 .title,.second-column .col-9 .title, .third-column .col-9 .title{
+    text-decoration: none; 
+    color: darkcyan;
+    font-size: 15px;
+}
+.footer .first-column .col-9 .title:hover,.second-column .col-9 .title:hover, .third-column .col-9 .title:hover{
+    color: darkorange;
+}
+.footer .first-column .col-9 .subtitle,.second-column .col-9 .subtitle, .third-column .col-9 .subtitle{
+    text-decoration: none;
+    color: white;
+}
+.footer .first-column .col-9 .subtitle:hover,.second-column .col-9 .subtitle:hover.third-column .col-9 .subtitle:hover{
+    color: darkorange;
+}
+.footer .first-column .col-9 .link,.second-column .col-9 .link, .third-column .col-9 .link{
+    text-decoration: none;
+    color:grey;
+}
+.footer .first-column .col-9 .link:hover,.second-column .col-9 .link:hover, .third-column .col-9 .link:hover{
+    color: darkorange;
+}
+
+.footer .third-column i{
+    font-size: 45px;
+    color: red;
+}
+
+.footer .row-footer{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    color: white;
+    
+}
+.footer .row-footer h5{
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.footer .row-footer .icons i{
+    font-size: 15px;
+    margin: 8px;
+}
+.footer .row-footer .icons a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .row-footer .privacy p{
+    text-transform: uppercase;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+
+/* -- arrow up -- */
+#top{ 
+    border:1px;
+    background-color: orangered;
+    text-align:center;
+    padding:0.3em 0.6em;
+    position:fixed;
+    bottom:50px; 
+    right:25px;
+    cursor:pointer;
+    display:inline-block;
+    color: white;
+    font-family:verdana;
+    font-size:25px;
+    border-radius: 100px; 
+}
+
+/* -- END CSS page -- */
